@@ -1,0 +1,31 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="@string/pflistcolor">
+		<ListPreference android:key="listback" android:title="@string/listback"
+			android:summary="@string/listbacksum" android:entries="@array/listbackentries"
+			android:entryValues="@array/listbackvalue" android:dialogTitle="@string/listback" />
+		<ListPreference android:key="listcolor"
+			android:title="@string/listcolor" android:summary="@string/listcolorsum"
+			android:entries="@array/listcolorentries" android:entryValues="@array/listcolorvalue"
+			android:dialogTitle="@string/listcolor" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="@string/pfwebv">
+		<ListPreference android:key="font" android:title="@string/fontset"
+			android:summary="@string/fontsetsum" android:entries="@array/fontentry"
+			android:entryValues="@array/fontvalue" android:dialogTitle="@string/fontset" />
+		<!-- THIS DID NOT WORK ANY.... <ListPreference android:key="ua" android:title="@string/uaset" 
+			android:summary="@string/uasetsum" android:entries="@array/uaentry" android:entryValues="@array/uavalue" 
+			android:dialogTitle="@string/uaset"/> -->
+		<CheckBoxPreference android:key="javascript"
+			android:title="@string/jsset" android:summary="@string/jssetsum"
+			android:enabled="true" />
+		<CheckBoxPreference android:key="plugin"
+			android:title="@string/pluginset" android:summaryOn="@string/pluginseton"
+			android:summaryOff="@string/pluginsetoff" />
+		<CheckBoxPreference android:key="volume"
+			android:title="@string/volumeset" android:summaryOn="@string/vseton"
+			android:summaryOff="@string/vsetoff" />
+		<CheckBoxPreference android:key="loadimage"
+			android:title="@string/loadimage" android:summaryOn="@string/loadimageon"
+			android:summaryOff="@string/loadimageoff" />
+	</PreferenceCategory>
+</PreferenceScreen>

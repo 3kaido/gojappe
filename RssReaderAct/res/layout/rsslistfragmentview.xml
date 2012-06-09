@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragmentparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null" >
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#77000000"
+        android:clickable="true"
+        android:lines="1"
+        android:onClick="selectCategory"
+        android:padding="5sp"
+        android:text="category://"
+        android:textColor="@color/lite_blue"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/category"
+        android:layout_alignTop="@id/category"
+        android:layout_toRightOf="@id/category"
+        android:background="#77000000"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:longClickable="true"
+        android:padding="5sp"
+        android:text="#gojappenews loading..."
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/splitter"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/category"
+        android:background="@color/orange"
+        android:contentDescription="just line (splitter)"
+        android:focusable="false" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/splitter"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@null"
+        android:cacheColorHint="@null"
+        android:divider="@android:drawable/divider_horizontal_dim_dark"
+        android:dividerHeight="2dp"
+        android:footerDividersEnabled="false"
+        android:scrollbarSize="3dp"
+        android:scrollbarThumbVertical="@drawable/scroller"
+        android:scrollbarTrackVertical="@null" />
+
+    <include
+        android:layout_below="@id/splitter"
+        layout="@layout/empty" />
+
+</RelativeLayout>
