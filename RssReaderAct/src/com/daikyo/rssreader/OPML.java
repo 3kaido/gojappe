@@ -57,7 +57,7 @@ public class OPML {
 	public final static String UPDATED = "updated";
 	private static final String EMPTYSTRING = "";
 	
-	private static final String OPML_URL = "http://goo.gl/BzmGI";	
+	private static final String OPML_URL = "https://raw.github.com/3kaido/gojappe/master/RssReaderAct/assets/google-reader-subscriptions.xml";	
 //	private static final String OPML_URL = "http://sites.google.com/site/3kaido/degosuke/google-reader-subscriptions.xml";
 	// private static final String OPML_TEST ="http://sites.google.com/site/3kaido/degosuke/feeds/google-reader-subscriptions.xml";
 		
