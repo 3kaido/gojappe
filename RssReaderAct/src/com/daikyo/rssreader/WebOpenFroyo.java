@@ -152,7 +152,15 @@ public class WebOpenFroyo extends FragmentActivity {
 
     	}// END ON CREATE ACTIVITY.
     
-	
+	@Override
+	public boolean onKeyLongPress(int keyCode, KeyEvent event) {
+		if (event.getKeyCode() == KeyEvent.KEYCODE_BACK) {
+			//BACK KEY LONG = "open menu".
+			openOptionsMenu();
+			return true;
+		}
+		return super.onKeyLongPress(keyCode, event);
+	}
 	
 	@Override
 	protected void onStart() {

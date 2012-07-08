@@ -51,6 +51,16 @@ public class RssReaderAct extends FragmentActivity {
     }
 
 
+	@Override
+	public boolean onKeyLongPress(int keyCode, KeyEvent event) {
+		if (event.getKeyCode() == KeyEvent.KEYCODE_BACK) {
+			//BACK KEY LONG = "open menu".
+			openOptionsMenu();
+			return true;
+		}
+		return super.onKeyLongPress(keyCode, event);
+	}
+
 	/*
 	 * ONCREATE...
 	 * 

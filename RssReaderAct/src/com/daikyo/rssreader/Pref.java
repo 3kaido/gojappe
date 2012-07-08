@@ -39,7 +39,7 @@ public class Pref extends PreferenceActivity {
 		final SharedPreferences pf = PreferenceManager
 				.getDefaultSharedPreferences(c);
 		final String versionName;
-		final String description = "アニメーションを戻しました。あとライブラリ更新";
+		final String description = "RSSを更新できない致命的バグを修正しました。　あとライブラリ更新。次回はandroid4.0対応します";
 		try {
 			versionName = c.getPackageManager().getPackageInfo(
 					c.getPackageName(), 0).versionName;

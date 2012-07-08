@@ -27,7 +27,7 @@
                 type="rss" xmlUrl="http://feeds.feedburner.com/Appmax" htmlUrl="http://appmax.jp/"/>
             <outline text="Hatebu.android" title="Hatebu.android"
                 type="rss"
-                xmlUrl="http://b.hatena.ne.jp/t/android?sort=hot&amp;threshold=&amp;mode=rss" htmlUrl="http://b.hatena.ne.jp/search/tag?q=android&amp;users=3"/>
+                xmlUrl="http://b.hatena.ne.jp/t/android?sort=hot&amp;threshold=&amp;mode=rss" htmlUrl="http://b.hatena.ne.jp/search/tag?sort=recent&amp;q=android&amp;users=3"/>
             <outline text="あんどろいど速報" title="あんどろいど速報" type="rss"
                 xmlUrl="http://androidken.blog119.fc2.com/?pc&amp;xml" htmlUrl="http://androidken.blog119.fc2.com/"/>
             <outline text="すまほん!!" title="すまほん!!" type="rss"
@@ -100,6 +100,8 @@
         <outline title="akiba" text="akiba">
             <outline text="4Gamer.net − 最新記事" title="4Gamer.net − 最新記事"
                 type="rss" xmlUrl="http://www.4gamer.net/rss/index.xml" htmlUrl="http://www.4gamer.net"/>
+            <outline text="GATUN" title="GATUN" type="rss"
+                xmlUrl="http://blog.livedoor.jp/gatun02/index.rdf" htmlUrl="http://blog.livedoor.jp/gatun02/"/>
             <outline text="Hatebu.動画" title="Hatebu.動画" type="rss"
                 xmlUrl="http://feeds.feedburner.com/hatena/b/video" htmlUrl="http://b.hatena.ne.jp/video"/>
             <outline text="Kotaku JAPAN" title="Kotaku JAPAN" type="rss"
@@ -126,6 +128,8 @@
                 xmlUrl="http://0taku.livedoor.biz/index.rdf" htmlUrl="http://0taku.livedoor.biz/"/>
             <outline text="オレ的ゲーム速報＠刃" title="オレ的ゲーム速報＠刃" type="rss"
                 xmlUrl="http://jin115.com/index.rdf" htmlUrl="http://jin115.com/"/>
+            <outline text="カゼタカ2ブログch" title="カゼタカ2ブログch" type="rss"
+                xmlUrl="http://blog.livedoor.jp/kaibu222/index.rdf" htmlUrl="http://blog.livedoor.jp/kaibu222/"/>
             <outline text="カラパイア" title="カラパイア" type="rss"
                 xmlUrl="http://karapaia.livedoor.biz/index.rdf" htmlUrl="http://karapaia.livedoor.biz/"/>
             <outline text="ゲハ速" title="ゲハ速" type="rss"
@@ -169,9 +173,6 @@
                 xmlUrl="http://headlines.yahoo.co.jp/rss/spnavi-c_spo.xml" htmlUrl="http://news.search.yahoo.co.jp/search?p=%A5%B9%A5%DD%A1%BC%A5%C4%A5%CA%A5%D3&amp;vaop=a&amp;to=2&amp;st=n&amp;c_n=c_spo"/>
             <outline text="芸スポまとめblog" title="芸スポまとめblog" type="rss"
                 xmlUrl="http://blog.livedoor.jp/domesaka/index.rdf" htmlUrl="http://blog.livedoor.jp/domesaka/"/>
-            <outline text="芸スポ・ニュー速　取りまとめ隊" title="芸スポ・ニュー速　取りまとめ隊"
-                type="rss"
-                xmlUrl="http://blog.livedoor.jp/iyokan18/index.rdf" htmlUrl="http://blog.livedoor.jp/iyokan18/"/>
             <outline text="２ｃｈスポーツニュースナビ" title="２ｃｈスポーツニュースナビ"
                 type="rss"
                 xmlUrl="http://sportsnavi.dtiblog.com/?pc&amp;xml" htmlUrl="http://sportsnavi.dtiblog.com/"/>
@@ -207,6 +208,8 @@
                 xmlUrl="http://blog.livedoor.jp/roadtoreality/index.rdf" htmlUrl="http://blog.livedoor.jp/roadtoreality/"/>
             <outline text="VIPPERな俺" title="VIPPERな俺" type="rss"
                 xmlUrl="http://blog.livedoor.jp/news23vip/index.rdf" htmlUrl="http://blog.livedoor.jp/news23vip/"/>
+            <outline text="VIPワイドガイド" title="VIPワイドガイド" type="rss"
+                xmlUrl="http://news4wide.livedoor.biz/index.rdf" htmlUrl="http://news4wide.livedoor.biz/"/>
             <outline text="V速ニュップ" title="V速ニュップ" type="rss"
                 xmlUrl="http://blog.livedoor.jp/ringotomomin/index.rdf" htmlUrl="http://blog.livedoor.jp/ringotomomin/"/>
             <outline text="(´A｀)＜咳をしてもゆとり" title="(´A｀)＜咳をしてもゆとり"
@@ -232,6 +235,8 @@
                 xmlUrl="http://sakusakumirai.blog.fc2.com/?pc&amp;xml" htmlUrl="http://sakusakumirai.blog.fc2.com/"/>
             <outline text="えっ!?またここのサイト?" title="えっ!?またここのサイト?"
                 type="rss" xmlUrl="http://matacoco.com/index.rdf" htmlUrl="http://www.matacoco.com/"/>
+            <outline text="かるかんタイムズ" title="かるかんタイムズ" type="rss"
+                xmlUrl="http://blog.livedoor.jp/karukan123/index.rdf" htmlUrl="http://blog.livedoor.jp/karukan123/"/>
             <outline text="ちゃんねるZ" title="ちゃんねるZ" type="rss"
                 xmlUrl="http://feeds.fc2.com/fc2/xml?pc&amp;host=channelz.blog118" htmlUrl="http://channelz.blog118.fc2.com/"/>
             <outline text="はれぞう" title="はれぞう" type="rss"
@@ -270,8 +275,6 @@
                 xmlUrl="http://brow2ing.doorblog.jp/index.rdf" htmlUrl="http://brow2ing.doorblog.jp/"/>
             <outline text="ムズ痒いブログ" title="ムズ痒いブログ" type="rss"
                 xmlUrl="http://blog.livedoor.jp/deal_with0603/index.rdf" htmlUrl="http://blog.livedoor.jp/deal_with0603/"/>
-            <outline text="モリ速報VIP" title="モリ速報VIP" type="rss"
-                xmlUrl="http://blog.livedoor.jp/ch2ch2ch2/index.rdf" htmlUrl="http://blog.livedoor.jp/ch2ch2ch2/"/>
             <outline text="ライフハックちゃんねる弐式" title="ライフハックちゃんねる弐式"
                 type="rss"
                 xmlUrl="http://lifehack2ch.livedoor.biz/index.rdf" htmlUrl="http://lifehack2ch.livedoor.biz/"/>

@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.daikyo.rssreader"
     android:installLocation="auto"
-    android:versionCode="68"
-    android:versionName="0.8.8kinga" >
+    android:versionCode="70"
+    android:versionName="0.9.0genius" >
 
     <uses-sdk
         android:minSdkVersion="5"

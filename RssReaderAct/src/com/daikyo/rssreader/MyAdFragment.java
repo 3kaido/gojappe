@@ -21,8 +21,8 @@ import com.google.ads.AdView;
 public class MyAdFragment extends Fragment {
 
 	public final int ADMOB	  = 0;
-	public final int MEDIBA  = 4;
-	public final int NEND 	= 5;
+	public final int MEDIBA  = 1;
+	public final int NEND 	= 2;
 //	public final int ADLANTIS = 2;
 //	public final int AdVision = 1;
 	private AdView admob;
@@ -43,16 +43,12 @@ public class MyAdFragment extends Fragment {
 		/*
 		 * ad
 		 */
-		int random = new Random().nextInt(5);
-		if (random>1)state=MEDIBA; //60%
-		else state=ADMOB; //40%
-		
-//		if (state != ADMOB){
-//			state = MEDIBA;// fix to 4;
-//		}
-		switch (NEND) {
+		int state = new Random().nextInt(3);
 
-		case MEDIBA:
+		
+		switch (state) {
+
+		case MEDIBA: // MEDIBA
 			mediba = new MasAdView(c);
 			mediba.setAuid(c.getString(R.string.mediba));
 			mediba.start();
