@@ -72,6 +72,8 @@ public class BkmkReader extends FragmentActivity {
         	return bkmkArray.size()+1;
         }
 
+        
+        
         @Override
         public Fragment getItem(int position) {
         	if (position == 0){
@@ -87,6 +89,7 @@ public class BkmkReader extends FragmentActivity {
         }
     }
 
+    
     private class MyPageChangeListener extends ViewPager.SimpleOnPageChangeListener {
     	
         @Override
@@ -94,7 +97,17 @@ public class BkmkReader extends FragmentActivity {
             focusedPage = position;
         }
     }
-
+    
+	@Override
+	public boolean onKeyLongPress(int keyCode, KeyEvent event) {
+		if (event.getKeyCode() == KeyEvent.KEYCODE_BACK) {
+			//BACK KEY LONG = "open menu".
+			openOptionsMenu();
+			return true;
+		}
+		return super.onKeyLongPress(keyCode, event);
+	}
+    
 	/*
 	 * ONCREATE...
 	 * 

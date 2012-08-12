@@ -43,11 +43,10 @@ public class MyAdFragment extends Fragment {
 		/*
 		 * ad
 		 */
-		int state = new Random().nextInt(3);
+		int state = new Random().nextInt(2);
 
-		
+		Log.w("adNum",String.valueOf(state));
 		switch (state) {
-
 		case MEDIBA: // MEDIBA
 			mediba = new MasAdView(c);
 			mediba.setAuid(c.getString(R.string.mediba));
@@ -63,16 +62,15 @@ public class MyAdFragment extends Fragment {
 			admob.loadAd(request);
 			return admob;
 		case NEND:
+			Log.w("adNum","nend");
 			NendAdView nend;
 			nend = (NendAdView) inflater.inflate(R.layout.nend, null);
+			
+//			/*
+//			* NendAdView(Context context, int [Spotid], String [Apikey])
+//			*/
+//			NendAdView nend = new NendAdView(getActivity(),9828, "3b656bdd5480e13360e08616cf3ce08870c070ec" );
 			return nend;
-//		case AdVision:
-//			XmlPullParser parser = c.getResources().getXml(R.layout.yicha);
-//			AttributeSet attr = Xml.asAttributeSet(parser);
-//			com.yicha.android.ads.AdVision vision = new com.yicha.android.ads.AdVision(
-//					c, attr);
-//			vision.AdStart(c.getString(R.string.AdVision));
-//			return vision;
 		}
 		return null;
 	}

@@ -8,6 +8,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -77,7 +78,15 @@ public class Manager extends FragmentActivity {
 		menu.add(0, MENU_DELUSEROPML, 0, getString(R.string.manager_menuclearuserfeed));
 		return result;
 	}// END MENU CREATE.
-	
+	@Override
+	public boolean onKeyLongPress(int keyCode, KeyEvent event) {
+		if (event.getKeyCode() == KeyEvent.KEYCODE_BACK) {
+			//BACK KEY LONG = "open menu".
+			openOptionsMenu();
+			return true;
+		}
+		return super.onKeyLongPress(keyCode, event);
+	}
 	/*
 	 * ON O-MENU SELECT.
 	 */
