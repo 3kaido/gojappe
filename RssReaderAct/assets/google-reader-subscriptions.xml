@@ -45,7 +45,7 @@
                 title="AFPBB News - トピックス -" type="rss"
                 xmlUrl="http://feeds.afpbb.com/afpbb_topics" htmlUrl="http://www.afpbb.com/"/>
             <outline text="CNN.co.jp" title="CNN.co.jp" type="rss"
-                xmlUrl="http://feeds.cnn.co.jp/cnn/rss" htmlUrl="http://www.cnn.co.jp/"/>
+                xmlUrl="http://feeds.cnn.co.jp/cnn/rss" htmlUrl="http://www.cnn.co.jp"/>
             <outline text="Excite世界びっくりニュース" title="Excite世界びっくりニュース"
                 type="rss"
                 xmlUrl="http://rss.excite.co.jp/rss/excite/odd" htmlUrl="http://www.excite.co.jp/News/odd/"/>
@@ -108,9 +108,6 @@
                 xmlUrl="http://feeds.kotaku.jp/rss/kotaku/index.xml" htmlUrl="http://www.kotaku.jp/"/>
             <outline text="Pouch［ポーチ］" title="Pouch［ポーチ］" type="rss"
                 xmlUrl="http://feeds.youpouch.com/youpouch?format=xml" htmlUrl="http://youpouch.com"/>
-            <outline text="【2ch】ニュー速VIPブログ(`･ω･´)"
-                title="【2ch】ニュー速VIPブログ(`･ω･´)" type="rss"
-                xmlUrl="http://blog.livedoor.jp/insidears/index.rdf" htmlUrl="http://blog.livedoor.jp/insidears/"/>
             <outline text="すくいぬ" title="すくいぬ" type="rss"
                 xmlUrl="http://suiseisekisuisui.blog107.fc2.com/?pc&amp;xml" htmlUrl="http://suiseisekisuisui.blog107.fc2.com/"/>
             <outline text="にゅうにゅうす -アニ萌え情報まとめブログ-"
@@ -129,7 +126,7 @@
             <outline text="オレ的ゲーム速報＠刃" title="オレ的ゲーム速報＠刃" type="rss"
                 xmlUrl="http://jin115.com/index.rdf" htmlUrl="http://jin115.com/"/>
             <outline text="カゼタカ2ブログch" title="カゼタカ2ブログch" type="rss"
-                xmlUrl="http://blog.livedoor.jp/kaibu222/index.rdf" htmlUrl="http://blog.livedoor.jp/kaibu222/"/>
+                xmlUrl="http://blog.livedoor.jp/kaibu222/index.rdf" htmlUrl="http://kazetaka.com/"/>
             <outline text="カラパイア" title="カラパイア" type="rss"
                 xmlUrl="http://karapaia.livedoor.biz/index.rdf" htmlUrl="http://karapaia.livedoor.biz/"/>
             <outline text="ゲハ速" title="ゲハ速" type="rss"
@@ -171,6 +168,8 @@
             <outline text="スポーツナビ - スポーツ - Yahoo!ニュース"
                 title="スポーツナビ - スポーツ - Yahoo!ニュース" type="rss"
                 xmlUrl="http://headlines.yahoo.co.jp/rss/spnavi-c_spo.xml" htmlUrl="http://news.search.yahoo.co.jp/search?p=%A5%B9%A5%DD%A1%BC%A5%C4%A5%CA%A5%D3&amp;vaop=a&amp;to=2&amp;st=n&amp;c_n=c_spo"/>
+            <outline text="ドメサカ板まとめブログ" title="ドメサカ板まとめブログ" type="rss"
+                xmlUrl="http://blog.livedoor.jp/domesoccer/index.rdf" htmlUrl="http://blog.livedoor.jp/domesoccer/"/>
             <outline text="芸スポまとめblog" title="芸スポまとめblog" type="rss"
                 xmlUrl="http://blog.livedoor.jp/domesaka/index.rdf" htmlUrl="http://blog.livedoor.jp/domesaka/"/>
             <outline text="２ｃｈスポーツニュースナビ" title="２ｃｈスポーツニュースナビ"
@@ -208,6 +207,8 @@
                 xmlUrl="http://blog.livedoor.jp/roadtoreality/index.rdf" htmlUrl="http://blog.livedoor.jp/roadtoreality/"/>
             <outline text="VIPPERな俺" title="VIPPERな俺" type="rss"
                 xmlUrl="http://blog.livedoor.jp/news23vip/index.rdf" htmlUrl="http://blog.livedoor.jp/news23vip/"/>
+            <outline text="VIPリサイクル" title="VIPリサイクル" type="rss"
+                xmlUrl="http://vip.2chblog.jp/index.rdf" htmlUrl="http://vip.2chblog.jp/"/>
             <outline text="VIPワイドガイド" title="VIPワイドガイド" type="rss"
                 xmlUrl="http://news4wide.livedoor.biz/index.rdf" htmlUrl="http://news4wide.livedoor.biz/"/>
             <outline text="V速ニュップ" title="V速ニュップ" type="rss"
@@ -234,11 +235,13 @@
             <outline text="うー速" title="うー速" type="rss"
                 xmlUrl="http://sakusakumirai.blog.fc2.com/?pc&amp;xml" htmlUrl="http://sakusakumirai.blog.fc2.com/"/>
             <outline text="えっ!?またここのサイト?" title="えっ!?またここのサイト?"
-                type="rss" xmlUrl="http://matacoco.com/index.rdf" htmlUrl="http://www.matacoco.com/"/>
+                type="rss" xmlUrl="http://matacoco.com/index.rdf" htmlUrl="http://blog.livedoor.jp//"/>
             <outline text="かるかんタイムズ" title="かるかんタイムズ" type="rss"
                 xmlUrl="http://blog.livedoor.jp/karukan123/index.rdf" htmlUrl="http://blog.livedoor.jp/karukan123/"/>
             <outline text="ちゃんねるZ" title="ちゃんねるZ" type="rss"
                 xmlUrl="http://feeds.fc2.com/fc2/xml?pc&amp;host=channelz.blog118" htmlUrl="http://channelz.blog118.fc2.com/"/>
+            <outline text="にゅーす のー そくほう" title="にゅーす のー そくほう" type="rss"
+                xmlUrl="http://nns2ch.net/index.rdf" htmlUrl="http://nns2ch.net/"/>
             <outline text="はれぞう" title="はれぞう" type="rss"
                 xmlUrl="http://blog.livedoor.jp/darkm/index.rdf" htmlUrl="http://blog.livedoor.jp/darkm/"/>
             <outline text="ぶる速-VIP" title="ぶる速-VIP" type="rss"
@@ -249,6 +252,9 @@
                 xmlUrl="http://mamesoku.com/index.rdf" htmlUrl="http://mamesoku.com/"/>
             <outline text="もみあげチャ～シュ～" title="もみあげチャ～シュ～" type="rss"
                 xmlUrl="http://michaelsan.livedoor.biz/index.rdf" htmlUrl="http://michaelsan.livedoor.biz/"/>
+            <outline text="ろむせん！！ | ROM専のためのキュレーションブログ"
+                title="ろむせん！！ | ROM専のためのキュレーションブログ" type="rss"
+                xmlUrl="http://blog.livedoor.jp/romsenmatome3/index.rdf" htmlUrl="http://blog.livedoor.jp/romsenmatome3/"/>
             <outline text="アルファルファモザイク" title="アルファルファモザイク" type="rss"
                 xmlUrl="http://alfalfalfa.com/index.rdf" htmlUrl="http://alfalfalfa.com/"/>
             <outline text="アンダーワールド" title="アンダーワールド" type="rss"
@@ -273,8 +279,8 @@
                 xmlUrl="http://hamusoku.com/index.rdf" htmlUrl="http://hamusoku.com/"/>
             <outline text="ブラブラブラウジング" title="ブラブラブラウジング" type="rss"
                 xmlUrl="http://brow2ing.doorblog.jp/index.rdf" htmlUrl="http://brow2ing.doorblog.jp/"/>
-            <outline text="ムズ痒いブログ" title="ムズ痒いブログ" type="rss"
-                xmlUrl="http://blog.livedoor.jp/deal_with0603/index.rdf" htmlUrl="http://blog.livedoor.jp/deal_with0603/"/>
+            <outline text="モモンガ速報" title="モモンガ速報" type="rss"
+                xmlUrl="http://momosoku.doorblog.jp/index.rdf" htmlUrl="http://momosoku.doorblog.jp/"/>
             <outline text="ライフハックちゃんねる弐式" title="ライフハックちゃんねる弐式"
                 type="rss"
                 xmlUrl="http://lifehack2ch.livedoor.biz/index.rdf" htmlUrl="http://lifehack2ch.livedoor.biz/"/>
