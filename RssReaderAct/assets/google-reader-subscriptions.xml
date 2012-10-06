@@ -91,11 +91,13 @@
                 xmlUrl="http://headlines.yahoo.co.jp/rss/scn-bus.xml" htmlUrl="http://news.search.yahoo.co.jp/search?p=%A5%B5%A1%BC%A5%C1%A5%CA&amp;vaop=a&amp;to=2&amp;st=n&amp;c_n=bus"/>
             <outline text="ダイヤモンド・オンライン - 新着記事"
                 title="ダイヤモンド・オンライン - 新着記事" type="rss"
-                xmlUrl="http://diamond.jp/feed.xml" htmlUrl="http://diamond.jp/category/dol"/>
+                xmlUrl="http://feed.ismedia.jp/rss/diamond/feed.xml" htmlUrl="http://diamond.jp/category/dol"/>
             <outline text="ナショナルジオグラフィック 公式日本語サイト - 雑誌 - Yahoo!ニュース"
                 title="ナショナルジオグラフィック 公式日本語サイト - 雑誌 - Yahoo!ニュース"
                 type="rss"
                 xmlUrl="http://zasshi.news.yahoo.co.jp/rss/natiogeo-all.xml" htmlUrl="http://zasshi.news.yahoo.co.jp/list/?m=natiogeo"/>
+            <outline text="ロケットニュース24" title="ロケットニュース24" type="rss"
+                xmlUrl="http://feeds.rocketnews24.com/rocketnews24?format=xml" htmlUrl="http://rocketnews24.com"/>
         </outline>
         <outline title="akiba" text="akiba">
             <outline text="4Gamer.net − 最新記事" title="4Gamer.net − 最新記事"
@@ -312,7 +314,7 @@
             <outline text="東京エスノ" title="東京エスノ" type="rss"
                 xmlUrl="http://blog.livedoor.jp/video_news/index.rdf" htmlUrl="http://blog.livedoor.jp/video_news/"/>
             <outline text="無題のドキュメント" title="無題のドキュメント" type="rss"
-                xmlUrl="http://mudainodqnment.ldblog.jp/index.rdf" htmlUrl="http://blog.livedoor.jp//"/>
+                xmlUrl="http://www.mudainodocument.com/index.rdf" htmlUrl="http://www.mudainodocument.com/"/>
             <outline text="無駄な知識などない" title="無駄な知識などない" type="rss"
                 xmlUrl="http://mudachishiki.livedoor.biz/index.rdf" htmlUrl="http://mudachishiki.livedoor.biz/"/>
             <outline text="特定しますたm9(｀・ω・´)" title="特定しますたm9(｀・ω・´)"
