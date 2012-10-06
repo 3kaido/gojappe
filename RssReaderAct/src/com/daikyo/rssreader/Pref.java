@@ -14,7 +14,6 @@ public class Pref extends PreferenceActivity {
 	public static final String DELETEDS = "deleteds";
 	public static final String CATEGORYLIST = "categoy"; // pfname.category.
 	public static final String LASTCATEGORY = "LASTCATEGORY";
-	public final static String PLUGINCONFIG = "plugin";
 	public final static String FONT = "font";
 	public final static String JAVASCRIPT = "javascript";
 	public final static String UA = "ua";
@@ -39,7 +38,8 @@ public class Pref extends PreferenceActivity {
 		final SharedPreferences pf = PreferenceManager
 				.getDefaultSharedPreferences(c);
 		final String versionName;
-		final String description = "RSSを更新できない致命的バグを修正しました。　あとライブラリ更新。次回はandroid4.0対応します";
+		final String description = "**0.9.0genius \nandroid4.0のメニューボタン無しにも対応 \n 【BACK長押し】でもメニュー呼び出し";
+		
 		try {
 			versionName = c.getPackageManager().getPackageInfo(
 					c.getPackageName(), 0).versionName;

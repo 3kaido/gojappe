@@ -18,9 +18,6 @@
 		<CheckBoxPreference android:key="javascript"
 			android:title="@string/jsset" android:summary="@string/jssetsum"
 			android:enabled="true" />
-		<CheckBoxPreference android:key="plugin"
-			android:title="@string/pluginset" android:summaryOn="@string/pluginseton"
-			android:summaryOff="@string/pluginsetoff" />
 		<CheckBoxPreference android:key="volume"
 			android:title="@string/volumeset" android:summaryOn="@string/vseton"
 			android:summaryOff="@string/vsetoff" />

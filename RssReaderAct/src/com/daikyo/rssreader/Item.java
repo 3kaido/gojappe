@@ -129,8 +129,8 @@ public class Item {
     	/*
     	 * Return true if OPEN-IN-INTENT.
     	 */
-		if (url.contains("market:/")
-				|| url.contains("market.android.")
+		if (url.contains("market://")
+				|| url.contains("play.google.")
 				|| url.contains("comment") //comment
 				|| url.contains("=form") //comment
 				|| url.contains(".gif")
@@ -138,7 +138,7 @@ public class Item {
 				|| url.contains(".jpg")
 				|| url.contains(".jpeg")
 				|| url.contains(".nicovideo.")
-				|| url.contains(".youtube.")
+			 	|| url.contains("youtube.com")
 				|| url.contains(".2ch.net")
 				|| url.contains("twitter.com")) {
 	    	return true; // Open-in Intent.

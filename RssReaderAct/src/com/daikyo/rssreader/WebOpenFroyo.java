@@ -19,9 +19,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnLongClickListener;
-import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
-import android.webkit.WebSettings.PluginState;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ImageButton;
@@ -56,8 +54,6 @@ public class WebOpenFroyo extends FragmentActivity {
 		wv = (WebView)findViewById(R.id.webwindow); // init.
 		ws = wv.getSettings(); // init.
 		
-		wv.setWebChromeClient(new WebChromeClient()); // MAGIC to set as
-															// DefaultBrowser?
 
 		wv.setWebViewClient(new WebViewClient() {
 			@Override
@@ -94,15 +90,15 @@ public class WebOpenFroyo extends FragmentActivity {
 			}
 		});
 
-		// Log.w("ver",String.valueOf(Build.VERSION.SDK_INT));
-		/*
-		 * Plugins
-		 */
-		if (pf.getBoolean(Pref.PLUGINCONFIG, true)) {
-			ws.setPluginState(PluginState.ON);
-		} else {
-			ws.setPluginState(PluginState.OFF);
-		}
+//		/*
+//		 * Plugins
+//		 */
+//		if (pf.getBoolean(Pref.PLUGINCONFIG, true)) {
+//			ws.setPluginState(PluginState.ON_DEMAND);
+//			ws.setAllowFileAccess(true);
+//		} else {
+//			ws.setPluginState(PluginState.OFF);
+//		}
 		/*
 		 * Images
 		 */
@@ -111,12 +107,12 @@ public class WebOpenFroyo extends FragmentActivity {
 		} else {
 			ws.setBlockNetworkImage(true);
 		}
-//		String ua = pf.getString(Pref.UA, "Mozilla/5.0 (Linux; U; Android 2.2.1; en-us; SPH-D700 Build/FROYO) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1");
-//		ws.setUserAgentString(ua);
+
+		
 		ws.setDefaultFontSize(
 				Integer.valueOf(pf.getString(Pref.FONT, WebOpen.FONT_DEFAULT)));
 		ws.setJavaScriptEnabled(
-				pf.getBoolean(Pref.JAVASCRIPT, true));
+				pf.getBoolean(Pref.JAVASCRIPT, false));
 		wv.loadUrl(item.getURL().toString());
 		/*
 		 * page DOWN.
@@ -128,7 +124,7 @@ public class WebOpenFroyo extends FragmentActivity {
 			}// END ON CLICK.
 		});// END LISTENER.
 		pgdn.setOnLongClickListener(new OnLongClickListener(){
-
+			// set "close?" button.
 			public boolean onLongClick(View v) {
 				// prompt "close??"
 				final AlertDialog.Builder builder = new AlertDialog.Builder(v.getContext());
@@ -143,12 +139,9 @@ public class WebOpenFroyo extends FragmentActivity {
 							}// end on-click.
 						});// end Listener.
 				builder.show();
-				return true;			
+				return true;	
 				}
 		});
-		/*
-		 * Image Handler
-		 */
 
     	}// END ON CREATE ACTIVITY.
     
@@ -210,7 +203,7 @@ public class WebOpenFroyo extends FragmentActivity {
 
 	@Override
 	public boolean dispatchKeyEvent(KeyEvent e) {
-		boolean volumescroll = PreferenceManager.getDefaultSharedPreferences(this).getBoolean(Pref.VOLUMESCROLL, false);
+		boolean volumescroll = PreferenceManager.getDefaultSharedPreferences(this).getBoolean(Pref.VOLUMESCROLL, true);
 		switch (e.getKeyCode()) {
 		case KeyEvent.KEYCODE_BACK:
 			if (e.getAction() == KeyEvent.ACTION_DOWN && wv.canGoBack()) {
@@ -244,23 +237,6 @@ public class WebOpenFroyo extends FragmentActivity {
 		} // end switch.
 		return super.dispatchKeyEvent(e);
 	}
-
-	@Override
-	public void onPause() { // FOCUS GONE. CHECK FLASH.
-		super.onPause();
-		if (ws.getPluginState() != PluginState.OFF) {
-			// stop time test.
-			//wv.pauseTimers(); // this doesnt work anyway.			
-			wv.reload();
-		}
-	}// END onPause.
-
-	@Override
-	protected void onResume() {
-		super.onResume();
-		if (ws.getPluginsEnabled())
-			wv.resumeTimers();
-	}// END ON-RESUME
 
     private class ImageHandler extends Handler {
 

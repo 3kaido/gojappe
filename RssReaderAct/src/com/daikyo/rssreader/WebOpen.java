@@ -88,8 +88,7 @@ public class WebOpen extends FragmentActivity {
 		final SharedPreferences pf = PreferenceManager
 				.getDefaultSharedPreferences(this);
 		// Log.w("ver",String.valueOf(Build.VERSION.SDK_INT));
-		ws.setPluginsEnabled(
-				pf.getBoolean(Pref.PLUGINCONFIG, true));
+
 		ws.setDefaultFontSize(
 				Integer.valueOf(pf.getString(Pref.FONT, FONT_DEFAULT)));
 		/*

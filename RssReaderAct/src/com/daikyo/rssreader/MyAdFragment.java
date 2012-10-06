@@ -4,7 +4,6 @@ import java.util.Random;
 
 import net.nend.android.NendAdView;
 import mediba.ad.sdk.android.openx.MasAdView;
-import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -43,9 +42,9 @@ public class MyAdFragment extends Fragment {
 		/*
 		 * ad
 		 */
-		int state = new Random().nextInt(2);
-
-		Log.w("adNum",String.valueOf(state));
+		int state = new Random().nextInt(3);
+		//Log.w("adNum",String.valueOf(state));
+		
 		switch (state) {
 		case MEDIBA: // MEDIBA
 			mediba = new MasAdView(c);
@@ -55,7 +54,7 @@ public class MyAdFragment extends Fragment {
 			
 		case ADMOB:
 			AdRequest request = new AdRequest();
-			String keyword = Pref.getLastItemName(getActivity());
+			String keyword = Pref.getLastItemName(c);
 			request.addKeyword(keyword);
 			admob = new AdView(getActivity(), admobSize(c),
 					c.getString(R.string.admob_id));

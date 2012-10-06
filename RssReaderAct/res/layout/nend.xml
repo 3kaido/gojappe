@@ -2,9 +2,9 @@
 
     <net.nend.android.NendAdView
         android:id="@+id/nend"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="50dp"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        
+        android:layout_gravity="top|center"
         NendApiKey="3b656bdd5480e13360e08616cf3ce08870c070ec"
         NendSpotId="9828" />
