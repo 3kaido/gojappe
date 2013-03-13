@@ -136,6 +136,7 @@ public class WebOpen extends FragmentActivity {
 		menu.add(0, RssReaderAct.MENU_ITEM_BROWSER, 0, getString(R.string.webopen_openexternalbrowser));
 		menu.add(0, RssReaderAct.MENU_SETTING, 0, getString(R.string.webopen_menuconfig));
 		menu.add(0, RssReaderAct.MENU_ITEM_TWITTER, 0, getString(R.string.menu_tweet));
+        menu.add(0, RssReaderAct.MENU_ITEM_SHARE, 0, getString(R.string.menu_share));
 		return result;
 	}// END CREATE MENU.
 
@@ -155,6 +156,10 @@ public class WebOpen extends FragmentActivity {
 		case RssReaderAct.MENU_ITEM_TWITTER:
 			item.selectAA(this);		
 			return true;
+			
+		case RssReaderAct.MENU_ITEM_SHARE:
+		    item.share(this);
+		    return true;
 			
 		}// END SWITCH....
 		return super.onOptionsItemSelected(menu);

@@ -79,8 +79,9 @@
 	</string-array>
 	<string-array name="rssitemmenu">
 		<item>Read Later</item>
-		<item>Share</item>
+		<item>Tweet to your friends</item>
 		<item>Open Intent</item>
+		<item>Share</item>
 	</string-array>
 	<string-array name="bkmkmenu">
 		<item>Open</item>

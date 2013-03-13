@@ -37,6 +37,7 @@ public class RssReaderAct extends FragmentActivity {
 	public static final int MENU_ITEM_BROWSER 	= Menu.FIRST + 10;
 	public static final int MENU_ITEM_TWITTER 	= Menu.FIRST + 11;
 	public static final int MENU_SETTING 		= Menu.FIRST + 12;
+	public static final int MENU_ITEM_SHARE     = Menu.FIRST + 13;
 	public RssCategory category; // hold list of Rss.
     CategoryPagerAdapter mAdapter;
     ViewPager mPager;

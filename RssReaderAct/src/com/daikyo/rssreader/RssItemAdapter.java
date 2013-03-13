@@ -56,8 +56,10 @@ public class RssItemAdapter extends ArrayAdapter<Item> {
 								} else if (which == 1) { // 1 is
 									// "TWEET/SHARE"
 									item.selectAA(c);
-								} else { // 2 is "OPEN INTENT"
+								} else if (which == 2) { // 2 is "OPEN INTENT"
 									item.openIntent(c);
+								} else { // 3 is "SHARE"
+								    item.share(c);
 								}
 							}// end on-click.
 						});// end Listener.
