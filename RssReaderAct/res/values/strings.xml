@@ -79,7 +79,8 @@
 	<string name="menu_recommend">recommend this App</string>
 	<string name="webopen_openexternalbrowser">External Browser</string>
 	<string name="webopen_menuconfig">Settings</string>
-	<string name="menu_tweet">Share</string>
+	<string name="menu_tweet">Tweet to your friends</string>
+	<string name="menu_share">Share</string>
 	<string name="loadimage">Load Image</string>
 	<string name="loadimageon">load images from Network (default)</string>
 	<string name="loadimageoff">ignore/disable network images</string>

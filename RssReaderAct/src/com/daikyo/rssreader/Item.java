@@ -69,6 +69,13 @@ public class Item {
         tweet.putExtra(Intent.EXTRA_TEXT, aa + " → " +mName+ " "+ mURL + c.getString(R.string.app_hashtag));
         c.startActivity(tweet);
     }
+    public void share(final Context c){
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("text/plain");
+        intent.putExtra(Intent.EXTRA_TEXT, mURL);
+        intent.putExtra(Intent.EXTRA_SUBJECT, mName);
+        c.startActivity(intent);
+    }
     public void selectAA(final Context c){
 		final AlertDialog.Builder builder = new AlertDialog.Builder(c);
 		final String title = c.getText(R.string.selectaa).toString() + mName;

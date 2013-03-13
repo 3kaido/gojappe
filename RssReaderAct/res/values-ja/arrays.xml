@@ -87,6 +87,7 @@
 		<item>あとで読む</item>
 		<item>友達に教える</item>
 		<item>インテントで開く</item>
+		<item>共有する</item>
 	</string-array>
 	<string-array name="bkmkmenu">
 		<item>開く</item>

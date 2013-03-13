@@ -83,6 +83,7 @@
 	<string name="webopen_openexternalbrowser">外部ブラウザへ</string>
 	<string name="webopen_menuconfig">設定</string>
 	<string name="menu_tweet">友達に教える</string>
+	<string name="menu_share">共有する</string>
 	<string name="loadimage">画像読み込み</string>
 	<string name="loadimageon">画像を読み込みます（デフォルト）</string>
 	<string name="loadimageoff">画像を読み込みません（!要注意!）</string>
