@@ -57,8 +57,7 @@ public class RssPager extends Fragment {
 		ImageButton favorite = (ImageButton)v.findViewById(R.id.favorite);
 		favorite.setOnLongClickListener(new OnLongClickListener() {
 			public boolean onLongClick(View v){
-				Intent i = new Intent(getActivity(),Manager.class);
-				startActivity(i);
+				openManager();
 				return true;
 			}// END ON LCLICK.
 		});// END LISTENER.
@@ -99,7 +98,7 @@ public class RssPager extends Fragment {
 	   
 	private void openManager() {
 		Intent goBkmk = new Intent(getActivity(), Manager.class);
-		startActivity(goBkmk);
+		startActivityForResult(goBkmk, RssReaderAct.RESULT_MANAGER);
 	}// END OPEN Manager
 
 	public void selectCategoryName() {

@@ -61,6 +61,10 @@ public class RssCategory {
 //        	return RssHolder.newInstance(position, category.getName(), rss);
             return ReaderFragment.newInstance(category.getName(),rss);
         }
+		
+		public int getPositionFromUrl(String url) {
+		    return category.getPositionFromUrl(url);
+		}
     }
 	
 	
@@ -80,6 +84,15 @@ public class RssCategory {
 
 	public Integer getCount(){
 		return randomizedIdArray.size();
+	}
+	
+	public int getPositionFromUrl(String url) {
+	    for (int i = 0; i < getCount(); ++i) {
+	        if (url.equals(getRss(i).getUrl())) {
+	            return i;
+	        }
+	    }
+	    return -1;
 	}
 		
 	public static String[] getCategoryList(Context c){
