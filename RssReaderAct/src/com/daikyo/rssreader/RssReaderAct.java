@@ -37,10 +37,12 @@ public class RssReaderAct extends FragmentActivity {
 	public static final int MENU_ITEM_BROWSER 	= Menu.FIRST + 10;
 	public static final int MENU_ITEM_TWITTER 	= Menu.FIRST + 11;
 	public static final int MENU_SETTING 		= Menu.FIRST + 12;
+	public static final int RESULT_MANAGER      = Menu.FIRST + 1;
 	public RssCategory category; // hold list of Rss.
     CategoryPagerAdapter mAdapter;
     ViewPager mPager;
     private int focusedPage = 0;
+    private String mFocusedUrl = null;
 
 
     private class MyPageChangeListener extends ViewPager.SimpleOnPageChangeListener {
@@ -96,8 +98,7 @@ public class RssReaderAct extends FragmentActivity {
 		ImageButton favorite = (ImageButton)findViewById(R.id.favorite);
 		favorite.setOnLongClickListener(new OnLongClickListener() {
 			public boolean onLongClick(View v){
-				Intent i = new Intent(RssReaderAct.this,Manager.class);
-				startActivity(i);
+				openManager();
 				return true;
 			}// END ON LCLICK.
 		});// END LISTENER.
@@ -113,17 +114,43 @@ public class RssReaderAct extends FragmentActivity {
 			v.setBackgroundResource(R.drawable.solidblack);
 		}
 	}
+	
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        Bundle bundle = null;
+        if (data != null) {
+            bundle = data.getExtras();
+        }
+        switch (requestCode) {
+            case RssReaderAct.RESULT_MANAGER:
+                if (resultCode == RESULT_OK && bundle != null) {
+                    mFocusedUrl = bundle.getString("currentPositionUrl");
+                }
+                break;
+            default:
+                break;
+        }
+    }
 
-	@Override
-	protected void onResume() {
-		super.onResume();
-		Log.w("resume", "called");
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.w("resume", "called");
+        if (mFocusedUrl != null && mPager != null) {
+            int page = mAdapter.getPositionFromUrl(mFocusedUrl);
+            mFocusedUrl = null;
+            if (page != -1) {
+                mPager.setCurrentItem(page);
+                focusedPage = page;
+            }
+        }
 	}
 	   
 
 	private void openManager() {
 		Intent goBkmk = new Intent(this, Manager.class);
-		startActivity(goBkmk);
+		startActivityForResult(goBkmk, RssReaderAct.RESULT_MANAGER);
 	}// END OPEN Manager
 
 	public void selectCategoryName() {

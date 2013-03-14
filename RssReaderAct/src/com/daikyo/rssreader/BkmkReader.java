@@ -147,7 +147,7 @@ public class BkmkReader extends FragmentActivity {
 
 	private void openManager() {
 		Intent goBkmk = new Intent(this, Manager.class);
-		startActivity(goBkmk);
+		startActivityForResult(goBkmk, RssReaderAct.RESULT_MANAGER);
 	}// END OPEN Manager
 
 

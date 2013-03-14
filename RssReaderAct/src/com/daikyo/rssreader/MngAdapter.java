@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.net.Uri;
+import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
 import android.text.Html;
@@ -61,13 +62,20 @@ public class MngAdapter extends CursorAdapter {
 //                       	    i.putExtra(Feed.BkmkURL, holder.url);
 //                       	    a.startActivity(i);
 //                       	    a.finish();
-                    		RssEntry rss = RssEntry.createRssFrom(a, holder.name, holder.url);
-                    		ReaderFragment rf = ReaderFragment.newInstance("preview",rss);
-                    		FragmentActivity fa = (FragmentActivity)a;
-                    		FragmentTransaction ft = fa.getSupportFragmentManager().beginTransaction();
-                    		ft.add(R.id.managerroot, rf);
-                    		ft.addToBackStack(null);
-                    		ft.commit();
+//                    		RssEntry rss = RssEntry.createRssFrom(a, holder.name, holder.url);
+//                    		ReaderFragment rf = ReaderFragment.newInstance("preview",rss);
+//                    		FragmentActivity fa = (FragmentActivity)a;
+//                    		FragmentTransaction ft = fa.getSupportFragmentManager().beginTransaction();
+//                    		ft.add(R.id.managerroot, rf);
+//                    		ft.addToBackStack(null);
+//                    		ft.commit();
+                            Intent data = new Intent();
+                            Bundle bundle = new Bundle();
+                            bundle.putString("currentPositionUrl", holder.url);
+                            data.putExtras(bundle);
+                            a.setResult(Activity.RESULT_OK, data);
+
+                    	    a.finish();
                     	} else { // 1 is OPEN-INTENT.
                             Uri uri = Uri.parse(holder.url);
                            	Intent i = new Intent(Intent.ACTION_VIEW,uri);
