@@ -27,7 +27,7 @@ import com.daikyo.rssreader.Feed.RssEntry;
 
 public class BkmkReader extends FragmentActivity {
 	public static final String ACTION_OPMLUPDATED = "reload"; // used in
-															// reload-INTENT
+															// reload-INTENT.
 															// from OPML.
 	public static final String ACTION_NEWRSS = "newrss"; // used to load new RSS
 															// from Bkmk.

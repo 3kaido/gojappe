@@ -13,7 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
-import com.google.ads.AdRequest;
+import com.google.ads.*;
 import com.google.ads.AdSize;
 import com.google.ads.AdView;
 
@@ -45,7 +45,7 @@ public class MyAdFragment extends Fragment {
 		int state = new Random().nextInt(3);
 		//Log.w("adNum",String.valueOf(state));
 		
-		switch (state) {
+		switch (0) {
 		case MEDIBA: // MEDIBA
 			mediba = new MasAdView(c);
 			mediba.setAuid(c.getString(R.string.mediba));
