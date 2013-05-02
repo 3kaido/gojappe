@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="Animation" parent="android:Animation" />
+	<style name="Animation.Slidein" parent="android:Animation.Activity">
+<!-- 		<item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item> -->
+<!-- 		<item name="android:activityOpenExitAnimation">@anim/slide_out_left</item> -->
+<!-- 		<item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item> -->
+<!-- 		<item name="android:activityCloseExitAnimation">@anim/slide_out_right</item> -->
+		<item name="android:windowEnterAnimation">@anim/slide_in_right</item>
+		<item name="android:windowExitAnimation">@anim/slide_out_right</item>
+	</style>
+</resources>

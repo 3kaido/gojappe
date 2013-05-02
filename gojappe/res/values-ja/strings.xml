@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">gojappe</string>
+	<string name="app_hashtag"> #gojappenews</string>
+	<string name="recommend">gojappe お気軽ニュースリーダー
+		https://market.android.com/details?id=com.daikyo.rssreader
+		#gojappenews #androidjp
+	</string>
+	<string name="selectcategory">カテゴリを選択してください</string>
+	<string name="selectaa">AAを追加しますか? →</string>
+	<string name="feedbackurl">http://goo.gl/VJlwQ</string>
+	<string name="reader_rssempty">時間が経っても読み込め無い場合は、ネットワーク接続を確認して再度お試しください。
+	</string>
+	<string name="bkmkfoot">記事一覧でサイト名を長押しすると、そのサイトをお気に入り/巡回停止できます。</string>
+	<string name="rlaterfoot">→[bookmarks]→\n記事一覧でタイトルを長押しすると追加できます。\n30日間保存されます。</string>
+	<string name="credit1">"gojappe@opensource" from Mitsukaido, Ibaraki
+	</string>
+	<string name="credit2">follow me on Twitter@3kaido\n\n</string>
+	<string name="loadOPML">ウェブ上のデータで、内部DBのサイト一覧を更新します。</string>
+	<string name="updateOPML">( ﾟДﾟ)y─┛~~
+		\nフィード更新から20日経過しているか、またはフィードが空です。（新規インストール時）。\n更新しますか？
+	</string>
+
+	<string name="clearUserOPML">ユーザのフィードを全消去します。</string>
+	<string name="userOPML">SDカードからユーザ任意のOPMLを読み込みます。詳しくはヘルプをご参照ください。\n一つのOPMLのみ読み込み可能で、前のデータは削除されます。
+	</string>
+	<string name="loadOPML_ok">データ読み込み成功しました。</string>
+	<string name="loadOPML_NG">データ読み込み失敗しました。 ネットワーク接続を確認してください。</string>
+	<string name="filenotfound">ファイルが見つかりません。\nファイル名はgoogle-reader-subscriptions.xmlにして、SDカードのルートフォルダに置いてください。
+	</string>
+	<string name="pfwebv">gojappeブラウザ設定</string>
+	<string name="fontset">Font Size</string>
+	<string name="fontsetsum">デフォルトフォントの大きさ（4段階）デフォルト指定外の文字には適用されません。</string>
+	<string name="jsset">JavaScript</string>
+	<string name="jssetsum">OFFにすると動的なコンテンツがなくなり、ページが軽くなります。</string>
+	<string name="uaset">UserAgent</string>
+	<string name="uasetsum">UserAgentを偽装します。上級者向け</string>
+	<string name="pluginset">Plugin</string>
+	<string name="pluginseton">
+		Flashなどのプラグイン。
+		ONだとページが隠れた際にFlash再生を停止するためページが再読み込みされます。
+	</string>
+	<string name="pluginsetoff">
+		Flashなどのプラグイン。
+		OFFのときにFlashコンテンツはただの空白になります。
+	</string>
+	<string name="volumeset">音量ボタンスクロール</string>
+	<string name="vseton">
+		ボリュームボタンでブラウザ画面をスクロールします。（デフォルトOFF）flashなどの音量調整ができなくなりますので使用時は注意してください。
+	</string>
+	<string name="vsetoff">
+		ボリュームボタンを通常どおり音量調整に使います。（デフォルトOFF）ONにするとブラウザのページ送りに割り当てられます。
+		検索ボタンは常に下スクロールに割り当てられています。
+	</string>
+	<string name="readlater"># 後で読む
+	</string>
+	<string name="howtosetfav">お気に入りを設定するには、サイト名部分を長押ししてください。</string>
+
+	<string name="bkmk_erasedreadlater">「あとで読む」を全消ししました。</string>
+	<string name="menu_backtoreader">Back to Reader</string>
+	<string name="menu_help">Help/About</string>
+	<string name="rss_willaccessrandom">\nにランダムのみアクセスします。</string>
+	<string name="rss_addedtofav">\nをお気に入りに追加しました。</string>
+	<string name="rss_setdeleted">\nをランダム巡回から外しました。</string>
+	<string name="item_willreadlater">\nを後で読む</string>
+	<string name="item_tweetwithoutaa">AAなし</string>
+	<string name="item_urlinvalid">URLが不正、または不完全です。</string>
+	<string name="manager_menuupdatefeed">内部フィード一覧を更新</string>
+	<string name="manager_adduserfeed">個人のフィードを追加する</string>
+	<string name="menu_feedback">&quot;ご意見/巡回先提案など&quot;</string>
+	<string name="manager_menuclearuserfeed">個人のフィードをクリア</string>
+	<string name="opml_nowloading">（ ﾟωﾟ ）お読み込みします...</string>
+	<string name="opml_nowparsing">( ´_ゝ｀)解析してるんだが...</string>
+	<string name="rsscategory_alldeletederror">このカテゴリすべてのフィードが停止されています</string>
+	<string name="rsscategory_crawlall">全カテゴリを巡回する</string>
+	<string name="reader_menunavi">Back/Forward</string>
+	<string name="reader_dialognavi">ナビゲーション</string>
+	<string name="reader_menufavlist">お気に入り</string>
+	<string name="reader_menusetaccessmethod">お気に入り追加/削除</string>
+	<string name="reader_menumanager">巡回管理</string>
+	<string name="menu_checkupdate">Check Update</string>
+	<string name="menu_recommend">gojappeを友達に薦める！</string>
+	<string name="webopen_openexternalbrowser">外部ブラウザへ</string>
+	<string name="webopen_menuconfig">設定</string>
+	<string name="menu_tweet">友達に教える</string>
+	<string name="loadimage">画像読み込み</string>
+	<string name="loadimageon">画像を読み込みます（デフォルト）</string>
+	<string name="loadimageoff">画像を読み込みません（!要注意!）</string>
+	<string name="listback">リスト背景色</string>
+	<string name="listbacksum">RSSリストの背景、黒濃度が3段階指定できます</string>
+</resources>

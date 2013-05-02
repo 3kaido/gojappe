@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Randamn Reader</string>
+		<string name="app_hashtag"> #Randamn</string>
+	<string name="mymarket">https://market.android.com/search?q=3kaido</string>
+	<string name="myhelpurl">http://sites.google.com/site/3kaido/degosuke/help
+	</string>
+	<string name="recommend">I found a great app "Randamn reader". https://market.android.com/details?id=com.daikyo.rssreader
+		#Randamn #android</string>
+	<string name="selectcategory">Select Category</string>
+	<string name="selectaa">Add AA? →</string>
+	<string name="feedbackurl">http://goo.gl/VJlwQ</string>
+	<string name="reader_rssempty">If empty after a while, please check your network and reload.</string>
+	<string name="bkmkfoot">Long-Click the feed name to add Bookmark in Reader Screen.</string>
+	<string name="rlaterfoot">→[bookmarks]→\nLong-CLick the feed item to mark &quot;Read Later&quot;. The item is kept for 30days.</string>
+	<string name="credit1">"Randamn Reader@opensource" from Mitsukaido, Japan
+	</string>
+	<string name="credit2">follow me on Twitter@3kaido\n\n</string>
+	<string name="loadOPML">Update the feed list from the web.</string>
+	<string name="readlater"># Read Later
+	</string>
+	<string name="updateOPML">( ﾟДﾟ)y─┛~~
+		Feed List is empty, or haven\'t updated for 20days. Load it now?</string>
+	<string name="clearUserOPML">Clear/Delete all USER-LOADED-FEEDs</string>
+	<string name="userOPML">Load USER-defined OPML from SDcard. Please refer HELP for details.
+	</string>
+	<string name="loadOPML_ok">load OPML SUCCESS.</string>
+	<string name="loadOPML_NG">load OPML FAILED. Please review your network status and settings.</string>
+	<string name="filenotfound">file not found. \n its name must be google-reader-subscriptions.xml and must be placed at the root of SDcards
+	</string>
+	<string name="pfwebv">browser settings</string>
+	<string name="fontset">Font Size</string>
+	<string name="fontsetsum">set Default Font-size.</string>
+	<string name="jsset">JavaScript</string>
+	<string name="jssetsum">Turn off to load less.</string>
+	<string name="uaset">UserAgent</string>
+	<string name="uasetsum">(advanced) set UA</string>
+	<string name="pluginset">Plugin</string>
+	<string name="pluginseton">
+		Plugins. WHEN ON, the page will reload as it goes to background (stop flash movie).
+	</string>
+	<string name="pluginsetoff">
+		Plugins. WHEN OFF, the flash content will appear as just a white blank.
+	</string>
+	<string name="volumeset">VolumeBTN scroll</string>
+	<string name="vseton">
+		Scroll-by-Vbutton.(defalut=off) you cannot control flash sound once ON.
+	</string>
+	<string name="vsetoff">
+		Scroll-by-Vbutton.(defalut=off) you cannot control flash sound once ON.
+	</string>
+
+	<string name="howtosetfav">to toggle the site Favorite status, please long-click the title</string>
+
+
+	<string name="bkmk_erasedreadlater">cleared Read-Later items.</string>
+	<string name="menu_backtoreader">Back to Reader</string>
+	<string name="menu_help">Help/About</string>
+	<string name="rss_willaccessrandom">\n will be accessed randomly</string>
+	<string name="rss_addedtofav">\nをお気に入りに追加しました。</string>
+	<string name="rss_setdeleted">\nis removed from random access list.</string>
+	<string name="item_willreadlater">\n to be read LATER</string>
+	<string name="item_tweetwithoutaa">No AA</string>
+	<string name="item_urlinvalid">URL invalid or incorrect.</string>
+	<string name="manager_menuupdatefeed">UPDATE internal feed list.</string>
+	<string name="manager_adduserfeed">Add user feed.</string>
+	<string name="menu_feedback">feedback</string>
+	<string name="manager_menuclearuserfeed">clear/delete user-added-feeds</string>
+	<string name="opml_nowloading">（ ﾟωﾟ ）loading...</string>
+	<string name="opml_nowparsing">( ´_ゝ｀) parsing...</string>
+	<string name="rsscategory_alldeletederror">all feeds in this category are disabled.</string>
+	<string name="rsscategory_crawlall">access ALL category</string>
+	<string name="reader_menunavi">Back/Forward</string>
+	<string name="reader_dialognavi">Navigation</string>
+	<string name="reader_menufavlist">Bookmark</string>
+	<string name="reader_menusetaccessmethod">toggle Bookmark</string>
+	<string name="reader_menumanager">Feed Manager</string>
+	<string name="menu_checkupdate">Check Update</string>
+	<string name="menu_recommend">recommend this App</string>
+	<string name="webopen_openexternalbrowser">External Browser</string>
+	<string name="webopen_menuconfig">Settings</string>
+	<string name="menu_tweet">Share</string>
+	<string name="loadimage">Load Image</string>
+	<string name="loadimageon">load images from Network (default)</string>
+	<string name="loadimageoff">ignore/disable network images</string>
+	<string name="listcolorsum">Select Color of RssItem list. (default=white)</string>
+	<string name="listcolor">List Text Color</string>
+	<string name="pflistcolor">RssItemList</string>
+	<string name="listback">ListBackground</string>
+	<string name="listbacksum">color of Rss List background</string>
+</resources>

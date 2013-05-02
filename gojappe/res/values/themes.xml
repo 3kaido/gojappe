@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ThemeSlideAnim" parent="android:Theme.Dialog">   
+		<item name="android:windowAnimationStyle">@style/Animation.Slidein</item>
+		<item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="MyActTheme" parent="android:Theme.Wallpaper.NoTitleBar">   
+		<item name="android:windowAnimationStyle">@style/Animation.Slidein</item> 
+    </style>
+</resources>

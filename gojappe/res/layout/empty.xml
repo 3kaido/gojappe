@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <RelativeLayout
+        android:id="@android:id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null" >
+
+        <TextView
+            android:id="@+id/emptxt"
+            android:layout_width="220dip"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/reader_rssempty"
+            android:textColor="@color/lite_gray" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="@android:style/Widget.ProgressBar"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_above="@id/emptxt"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/helpb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emptxt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dip"
+            android:background="@null"
+            android:onClick="openHelp"
+            android:padding="10dp"
+            android:text="[ gojappe help ]"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</merge>
