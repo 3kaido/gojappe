@@ -62,7 +62,6 @@ public final class R {
     }
     public static final class id {
         public static final int Separator=0x7f0b0011;
-        public static final int ad=0x7f0b001e;
         public static final int backb=0x7f0b0005;
         public static final int bkmkimg=0x7f0b0001;
         public static final int bkmktab=0x7f0b0006;
@@ -88,6 +87,7 @@ public final class R {
         public static final int openintent=0x7f0b0025;
         public static final int pager=0x7f0b001b;
         public static final int parent=0x7f0b0019;
+        public static final int pb=0x7f0b001f;
         public static final int pgdn=0x7f0b0022;
         public static final int progress=0x7f0b000a;
         public static final int random=0x7f0b001c;
@@ -97,7 +97,7 @@ public final class R {
         public static final int splitter=0x7f0b0018;
         public static final int title=0x7f0b0017;
         public static final int titlebar=0x7f0b0010;
-        public static final int topbar=0x7f0b001f;
+        public static final int topbar=0x7f0b001e;
         public static final int webwindow=0x7f0b0021;
     }
     public static final class layout {

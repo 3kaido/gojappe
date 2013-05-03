@@ -38,7 +38,7 @@ public class Pref extends PreferenceActivity {
 		final SharedPreferences pf = PreferenceManager
 				.getDefaultSharedPreferences(c);
 		final String versionName;
-		final String description = "**0.9.0genius \nandroid4.0のメニューボタン無しにも対応 \n 【BACK長押し】でもメニュー呼び出し";
+		final String description = "**0.9.2mnmn \nバグ修正、ライブラリ更新 \n kagurazaka氏にパッチをもらいました。";
 		
 		try {
 			versionName = c.getPackageManager().getPackageInfo(

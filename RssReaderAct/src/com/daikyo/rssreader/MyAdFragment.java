@@ -47,10 +47,10 @@ public class MyAdFragment extends Fragment {
 		
 		switch (0) {
 		case MEDIBA: // MEDIBA
-			mediba = new MasAdView(c);
-			mediba.setAuid(c.getString(R.string.mediba));
-			mediba.start();
-			return mediba;
+//			mediba = new MasAdView(c);
+//			mediba.setAuid(c.getString(R.string.mediba));
+//			mediba.start();
+//			return mediba;
 			
 		case ADMOB:
 			AdRequest request = new AdRequest();

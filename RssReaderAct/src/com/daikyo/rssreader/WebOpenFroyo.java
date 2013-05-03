@@ -23,6 +23,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -37,9 +38,8 @@ public class WebOpenFroyo extends FragmentActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.webopen);
-		WebHeader wh = (WebHeader)findViewById(R.id.ad);
-		final ProgressBar pb = wh.getBar();
-		final TextView title = wh.getTitle();
+		final ProgressBar pb = (ProgressBar)findViewById(R.id.pb);
+		final TextView title = (TextView)findViewById(R.id.title);
 
 		final SharedPreferences pf = PreferenceManager
 		.getDefaultSharedPreferences(this);
